@@ -63,7 +63,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// DELETE guest (cascades: upgrades → room reservations → space reservations → guest)
+// DELETE guest 
 router.delete('/:id', async (req, res) => {
   const client = await pool.connect();
   try {
