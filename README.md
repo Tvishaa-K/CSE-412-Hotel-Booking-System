@@ -1,4 +1,4 @@
-# Grand Vista Hotel Booking System
+# Grand Vista Hotel - Booking System
 
 **CSE 412 — Group 17**
 Tvishaa Kandala, Joyce Lu, Shukri Muhidin
