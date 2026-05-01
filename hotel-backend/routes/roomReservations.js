@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET all reservation-upgrade links (joined view — SQL query #8)
+// GET all reservation-upgrade links 
 router.get('/upgrades/all', async (req, res) => {
   try {
     const result = await pool.query(`
@@ -89,7 +89,7 @@ router.get('/guest/:guestID', async (req, res) => {
   }
 });
 
-// POST create room reservation (with overlap check)
+// POST create room reservation with overlap check
 router.post('/', async (req, res) => {
   const { roomReservationID, guestID, roomID, checkInDate, checkOutDate, numGuests, status } = req.body;
   const client = await pool.connect();
@@ -115,7 +115,7 @@ router.post('/', async (req, res) => {
       VALUES ($1, $2, $3, $4, $5, $6, $7, NOW()) RETURNING *
     `, [roomReservationID, guestID, roomID, checkInDate, checkOutDate, numGuests, status || 'confirmed']);
 
-    // Update room status to occupied (only if not maintenance)
+    // Update room status to occupied 
     await client.query(
       "UPDATE Room SET status = 'occupied' WHERE roomID = $1 AND status != 'maintenance'",
       [roomID]
@@ -146,7 +146,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// DELETE (cancel) reservation
+// cancel reservation
 router.delete('/:id', async (req, res) => {
   const client = await pool.connect();
   try {
