@@ -9,7 +9,7 @@ Backend for our CSE 412 hotel booking project. Built with Node.js, Express, and 
 npm install
 ```
 
-2. Update `db.js` with your PostgreSQL credentials.
+2. Update `db.js` with your PostgreSQL credentials. We used a Unix socket connection with host `/tmp` and port `8888`.
 
 3. Set up the database:
 ```bash
