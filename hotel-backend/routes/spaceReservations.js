@@ -81,7 +81,7 @@ router.get('/guest/:guestID', async (req, res) => {
   }
 });
 
-// POST create space reservation (with overlap check)
+// POST create space reservation with overlap check
 router.post('/', async (req, res) => {
   const { spaceReservationID, guestID, spaceID, startDateTime, endDateTime, numAttendees, status } = req.body;
   const client = await pool.connect();
@@ -138,7 +138,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// DELETE (cancel) space reservation
+// cancel space reservation
 router.delete('/:id', async (req, res) => {
   const client = await pool.connect();
   try {
