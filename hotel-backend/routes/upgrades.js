@@ -52,7 +52,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// DELETE upgrade (cleans up bridge table first)
+// DELETE upgrade
 router.delete('/:id', async (req, res) => {
   const client = await pool.connect();
   try {
