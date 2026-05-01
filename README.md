@@ -99,9 +99,3 @@ The database is seeded with:
 - 6 event spaces (Conference Room A & B, Banquet Hall, Club Lounge, Rooftop Space, Board Room)
 - 6 upgrades (Breakfast $20, Late Checkout $30, Extra Bed $50, Airport Transfer $45, Parking $15, Spa Access $60)
 - 25 room reservations and 20 space reservations
-
-## Individual Contributions
-
-- **Tvishaa Kandala** — ER-to-relational schema, backend API routes, frontend pages, overall project setup
-- **Joyce Lu** — database seed data (insert.sql), data generation for all tables, Phase 3 video demonstration
-- **Shukri Muhidin** — SQL queries, Phase 2 demo queries, Phase 3 User Manual 
