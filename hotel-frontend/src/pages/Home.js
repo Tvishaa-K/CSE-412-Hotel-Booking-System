@@ -56,7 +56,7 @@ export default function Home() {
         <div className="stat-divider" />
         <div className="stat"><span className="stat-num">6</span><span className="stat-label">Event Spaces</span></div>
         <div className="stat-divider" />
-        <div className="stat"><span className="stat-num">6</span><span className="stat-label">Room Types</span></div>
+        <div className="stat"><span className="stat-num">7</span><span className="stat-label">Room Types</span></div>
         <div className="stat-divider" />
         <div className="stat"><span className="stat-num">6</span><span className="stat-label">Upgrades Available</span></div>
       </section>
