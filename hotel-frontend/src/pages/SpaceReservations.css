@@ -1,0 +1,67 @@
+.space-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.space-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent;
+  background: white;
+}
+
+.space-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.13);
+}
+
+.space-selected {
+  border: 2px solid #e94560;
+  box-shadow: 0 0 0 4px rgba(233, 69, 96, 0.15);
+}
+
+.space-unavailable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.space-img {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.space-body {
+  padding: 1rem;
+}
+
+.space-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.2rem;
+}
+
+.space-body p {
+  font-size: 0.82rem;
+  color: #888;
+  margin-bottom: 0.2rem;
+}
+
+.space-price {
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #1a1a2e !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.space-price span {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #888;
+}
