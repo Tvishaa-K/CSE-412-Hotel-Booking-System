@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../db');
 
-// GET all rooms — status computed dynamically from active reservations
+// GET all rooms with status matching active reservations
 router.get('/', async (req, res) => {
   try {
     const result = await pool.query(`
@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET available rooms — optionally filtered by specific date range
+// GET available rooms filtered by specific date range
 router.get('/available', async (req, res) => {
   const { checkIn, checkOut } = req.query;
   try {
