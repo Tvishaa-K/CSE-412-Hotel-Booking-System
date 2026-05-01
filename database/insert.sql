@@ -1,0 +1,166 @@
+INSERT INTO Guest VALUES (1,'Alice Johnson','alice1@email.com','602-555-1001');
+INSERT INTO Guest VALUES (2,'Brian Chen','brian2@email.com','602-555-1002');
+INSERT INTO Guest VALUES (3,'Cynthia Lee','cynthia3@email.com','602-555-1003');
+INSERT INTO Guest VALUES (4,'Daniel Kim','daniel4@email.com','602-555-1004');
+INSERT INTO Guest VALUES (5,'Emma Davis','emma5@email.com','602-555-1005');
+INSERT INTO Guest VALUES (6,'Frank Wilson','frank6@email.com','602-555-1006');
+INSERT INTO Guest VALUES (7,'Grace Martinez','grace7@email.com','602-555-1007');
+INSERT INTO Guest VALUES (8,'Henry Taylor','henry8@email.com','602-555-1008');
+INSERT INTO Guest VALUES (9,'Isabella Moore','isabella9@email.com','602-555-1009');
+INSERT INTO Guest VALUES (10,'Jack Anderson','jack10@email.com','602-555-1010');
+INSERT INTO Guest VALUES (11,'Kevin Brown','kevin11@email.com','602-555-1011');
+INSERT INTO Guest VALUES (12,'Lily Zhang','lily12@email.com','602-555-1012');
+INSERT INTO Guest VALUES (13,'Michael Scott','michael13@email.com','602-555-1013');
+INSERT INTO Guest VALUES (14,'Nancy White','nancy14@email.com','602-555-1014');
+INSERT INTO Guest VALUES (15,'Oscar Perez','oscar15@email.com','602-555-1015');
+INSERT INTO Guest VALUES (16,'Paula Green','paula16@email.com','602-555-1016');
+INSERT INTO Guest VALUES (17,'Quinn Adams','quinn17@email.com','602-555-1017');
+INSERT INTO Guest VALUES (18,'Rachel Hall','rachel18@email.com','602-555-1018');
+INSERT INTO Guest VALUES (19,'Sam Turner','sam19@email.com','602-555-1019');
+INSERT INTO Guest VALUES (20,'Tina Clark','tina20@email.com','602-555-1020');
+INSERT INTO Guest VALUES (21,'Uma Patel','uma21@email.com','602-555-1021');
+INSERT INTO Guest VALUES (22,'Victor Lopez','victor22@email.com','602-555-1022');
+INSERT INTO Guest VALUES (23,'Wendy King','wendy23@email.com','602-555-1023');
+INSERT INTO Guest VALUES (24,'Xavier Young','xavier24@email.com','602-555-1024');
+INSERT INTO Guest VALUES (25,'Yara Cruz','yara25@email.com','602-555-1025');
+
+
+INSERT INTO RoomType VALUES (1, 'Standard', 2, 150.00);
+INSERT INTO RoomType VALUES (2, 'Deluxe', 4, 210.00);
+INSERT INTO RoomType VALUES (3, 'Suite', 4, 450.00);
+INSERT INTO RoomType VALUES (4, 'Executive', 4, 350.00);
+INSERT INTO RoomType VALUES (5, 'Family', 6, 280.00);
+INSERT INTO RoomType VALUES (6, 'Penthouse', 6, 550.00);
+INSERT INTO RoomType VALUES (7, 'Accessible', 4, 150.00);
+
+
+INSERT INTO Room VALUES (1, 1, 'available', 1);   
+INSERT INTO Room VALUES (2, 1, 'available', 1);
+INSERT INTO Room VALUES (3, 1, 'maintenance', 7);
+INSERT INTO Room VALUES (4, 1, 'available', 7);
+INSERT INTO Room VALUES (5, 2, 'available', 2);
+INSERT INTO Room VALUES (6, 2, 'occupied', 2);
+INSERT INTO Room VALUES (7, 2, 'available', 7);
+INSERT INTO Room VALUES (8, 2, 'available', 7);
+INSERT INTO Room VALUES (9, 3, 'available', 3);
+INSERT INTO Room VALUES (10, 3, 'occupied', 3);
+INSERT INTO Room VALUES (11, 3, 'available', 4);
+INSERT INTO Room VALUES (12, 3, 'available', 4);
+INSERT INTO Room VALUES (13, 4, 'available', 4);
+INSERT INTO Room VALUES (14, 4, 'available', 5);
+INSERT INTO Room VALUES (15, 4, 'maintenance', 5);
+INSERT INTO Room VALUES (16, 4, 'available', 5);
+INSERT INTO Room VALUES (17, 5, 'available', 6);
+INSERT INTO Room VALUES (18, 5, 'occupied', 6);
+INSERT INTO Room VALUES (19, 5, 'available', 6);
+INSERT INTO Room VALUES (20, 5, 'available', 6);
+INSERT INTO Room VALUES (21, 6, 'available', 3);
+INSERT INTO Room VALUES (22, 6, 'available', 2);
+INSERT INTO Room VALUES (23, 6, 'occupied', 1);
+INSERT INTO Room VALUES (24, 6, 'available', 7);
+INSERT INTO Room VALUES (25, 6, 'available', 5);
+
+
+INSERT INTO Upgrade VALUES (1, 'Breakfast', 'Daily breakfast buffet', 20.00);
+INSERT INTO Upgrade VALUES (2, 'Late Checkout', 'Checkout at 2PM', 30.00);
+INSERT INTO Upgrade VALUES (3, 'Extra Bed', 'Additional bed', 50.00);
+INSERT INTO Upgrade VALUES (4, 'Airport Transfer', 'Airport pickup/drop-off service', 45.00);
+INSERT INTO Upgrade VALUES (5, 'Parking', 'Reserved parking', 15.00);
+INSERT INTO Upgrade VALUES (6, 'Spa Access', 'Access to spa', 60.00);
+
+
+INSERT INTO RoomReservation VALUES (1, 1, 1, '2026-03-01', '2026-03-03', 2, 'confirmed', '2026-02-20 10:00');
+INSERT INTO RoomReservation VALUES (2, 2, 5, '2026-03-02', '2026-03-05', 3, 'pending', '2026-02-21 11:00');
+INSERT INTO RoomReservation VALUES (3, 3, 9, '2026-03-03', '2026-03-06', 2, 'confirmed', '2026-02-22 12:00');
+INSERT INTO RoomReservation VALUES (4, 4, 2, '2026-03-04', '2026-03-05', 1, 'cancelled', '2026-02-23 09:00');
+INSERT INTO RoomReservation VALUES (5, 5, 10, '2026-03-05', '2026-03-08', 4, 'confirmed', '2026-02-24 14:00');
+INSERT INTO RoomReservation VALUES (6, 6, 6, '2026-03-06', '2026-03-09', 2, 'confirmed', '2026-02-25 11:00');
+INSERT INTO RoomReservation VALUES (7, 7, 11, '2026-03-07', '2026-03-10', 5, 'pending', '2026-02-26 10:00');
+INSERT INTO RoomReservation VALUES (8, 8, 12, '2026-03-08', '2026-03-11', 2, 'confirmed', '2026-02-27 09:00');
+INSERT INTO RoomReservation VALUES (9, 9, 3, '2026-03-09', '2026-03-11', 2, 'confirmed', '2026-02-28 13:00');
+INSERT INTO RoomReservation VALUES (10, 10, 14, '2026-03-10', '2026-03-13', 3, 'pending', '2026-03-01 08:00');
+INSERT INTO RoomReservation VALUES (11, 11, 15, '2026-03-11', '2026-03-13', 2, 'confirmed', '2026-03-02 09:00');
+INSERT INTO RoomReservation VALUES (12, 12, 16, '2026-03-12', '2026-03-14', 4, 'confirmed', '2026-03-02 11:00');
+INSERT INTO RoomReservation VALUES (13, 13, 17, '2026-03-13', '2026-03-16', 2, 'pending', '2026-03-03 12:00');
+INSERT INTO RoomReservation VALUES (14, 14, 18, '2026-03-14', '2026-03-17', 3, 'confirmed', '2026-03-03 14:00');
+INSERT INTO RoomReservation VALUES (15, 15, 19, '2026-03-15', '2026-03-18', 2, 'confirmed', '2026-03-04 10:00');
+INSERT INTO RoomReservation VALUES (16, 16, 20, '2026-03-16', '2026-03-19', 2, 'pending', '2026-03-04 11:00');
+INSERT INTO RoomReservation VALUES (17, 17, 21, '2026-03-17', '2026-03-20', 3, 'confirmed', '2026-03-05 12:00');
+INSERT INTO RoomReservation VALUES (18, 18, 22, '2026-03-18', '2026-03-21', 2, 'confirmed', '2026-03-05 13:00');
+INSERT INTO RoomReservation VALUES (19, 19, 23, '2026-03-19', '2026-03-22', 2, 'confirmed', '2026-03-06 10:00');
+INSERT INTO RoomReservation VALUES (20, 20, 24, '2026-03-20', '2026-03-23', 4, 'pending', '2026-03-06 11:00');
+INSERT INTO RoomReservation VALUES (21, 21, 25, '2026-03-21', '2026-03-24', 2, 'confirmed', '2026-03-07 12:00');
+INSERT INTO RoomReservation VALUES (22, 22, 4, '2026-03-22', '2026-03-25', 3, 'confirmed', '2026-03-07 13:00');
+INSERT INTO RoomReservation VALUES (23, 23, 7, '2026-03-23', '2026-03-26', 2, 'pending', '2026-03-08 10:00');
+INSERT INTO RoomReservation VALUES (24, 24, 8, '2026-03-24', '2026-03-27', 2, 'confirmed', '2026-03-08 11:00');
+INSERT INTO RoomReservation VALUES (25, 25, 13, '2026-03-25', '2026-03-28', 4, 'confirmed', '2026-03-09 12:00');
+
+
+INSERT INTO RoomReservationUpgrade VALUES (1, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (1, 2, 1);
+INSERT INTO RoomReservationUpgrade VALUES (2, 4, 1);
+INSERT INTO RoomReservationUpgrade VALUES (3, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (3, 3, 1);
+INSERT INTO RoomReservationUpgrade VALUES (4, 2, 1);
+INSERT INTO RoomReservationUpgrade VALUES (5, 1, 4);
+INSERT INTO RoomReservationUpgrade VALUES (5, 6, 1);
+INSERT INTO RoomReservationUpgrade VALUES (6, 5, 1);
+INSERT INTO RoomReservationUpgrade VALUES (7, 1, 5);
+INSERT INTO RoomReservationUpgrade VALUES (7, 3, 1);
+INSERT INTO RoomReservationUpgrade VALUES (8, 2, 1);
+INSERT INTO RoomReservationUpgrade VALUES (8, 5, 1);
+INSERT INTO RoomReservationUpgrade VALUES (9, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (10, 4, 1);
+INSERT INTO RoomReservationUpgrade VALUES (10, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (11, 2, 1);
+INSERT INTO RoomReservationUpgrade VALUES (11, 3, 1);
+INSERT INTO RoomReservationUpgrade VALUES (12, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (12, 5, 1);
+INSERT INTO RoomReservationUpgrade VALUES (13, 4, 1);
+INSERT INTO RoomReservationUpgrade VALUES (13, 6, 1);
+INSERT INTO RoomReservationUpgrade VALUES (14, 1, 3);
+INSERT INTO RoomReservationUpgrade VALUES (14, 2, 1);
+INSERT INTO RoomReservationUpgrade VALUES (15, 3, 1);
+INSERT INTO RoomReservationUpgrade VALUES (15, 5, 1);
+INSERT INTO RoomReservationUpgrade VALUES (16, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (17, 2, 1);
+INSERT INTO RoomReservationUpgrade VALUES (17, 4, 1);
+INSERT INTO RoomReservationUpgrade VALUES (18, 5, 1);
+INSERT INTO RoomReservationUpgrade VALUES (18, 6, 1);
+INSERT INTO RoomReservationUpgrade VALUES (19, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (20, 2, 1);
+INSERT INTO RoomReservationUpgrade VALUES (21, 3, 1);
+INSERT INTO RoomReservationUpgrade VALUES (22, 4, 1);
+INSERT INTO RoomReservationUpgrade VALUES (23, 1, 2);
+INSERT INTO RoomReservationUpgrade VALUES (24, 5, 1);
+
+
+INSERT INTO Space VALUES (1, 'Conference Room A', 12, 75.00, 'reserved');
+INSERT INTO Space VALUES (2, 'Conference Room B', 20, 110.00, 'available');
+INSERT INTO Space VALUES (3, 'Banquet Hall', 150, 300.00, 'reserved');
+INSERT INTO Space VALUES (4, 'Club Lounge', 30, 40.00, 'available');
+INSERT INTO Space VALUES (5, 'Rooftop Space', 60, 200.00, 'available');
+INSERT INTO Space VALUES (6, 'Board Room', 15, 90.00, 'available');
+
+INSERT INTO SpaceReservation VALUES (1, 1, 1, '2026-03-01 09:00', '2026-03-01 12:00', 15, 'confirmed', '2026-02-20');
+INSERT INTO SpaceReservation VALUES (2, 2, 2, '2026-03-02 13:00', '2026-03-02 16:00', 25, 'pending', '2026-02-21');
+INSERT INTO SpaceReservation VALUES (3, 3, 3, '2026-03-03 18:00', '2026-03-03 22:00', 100, 'confirmed', '2026-02-22');
+INSERT INTO SpaceReservation VALUES (4, 4, 4, '2026-03-04 10:00', '2026-03-04 11:00', 8, 'confirmed', '2026-02-23');
+INSERT INTO SpaceReservation VALUES (5, 5, 5, '2026-03-05 17:00', '2026-03-05 20:00', 50, 'confirmed', '2026-02-24');
+INSERT INTO SpaceReservation VALUES (6, 6, 6, '2026-03-06 14:00', '2026-03-06 16:00', 12, 'cancelled', '2026-02-25');
+INSERT INTO SpaceReservation VALUES (7, 7, 1, '2026-03-07 10:00', '2026-03-07 13:00', 18, 'confirmed', '2026-02-26');
+INSERT INTO SpaceReservation VALUES (8, 8, 2, '2026-03-08 15:00', '2026-03-08 18:00', 30, 'confirmed', '2026-02-27');
+INSERT INTO SpaceReservation VALUES (9, 9, 3, '2026-03-09 19:00', '2026-03-09 23:00', 120, 'confirmed', '2026-02-28');
+INSERT INTO SpaceReservation VALUES (10, 10, 4, '2026-03-10 09:00', '2026-03-10 11:00', 10, 'pending', '2026-03-01');
+INSERT INTO SpaceReservation VALUES (11, 11, 5, '2026-03-11 16:00', '2026-03-11 19:00', 40, 'confirmed', '2026-03-02');
+INSERT INTO SpaceReservation VALUES (12, 12, 6, '2026-03-12 14:00', '2026-03-12 17:00', 20, 'confirmed', '2026-03-03');
+INSERT INTO SpaceReservation VALUES (13, 13, 1, '2026-03-13 09:00', '2026-03-13 12:00', 15, 'confirmed', '2026-03-04');
+INSERT INTO SpaceReservation VALUES (14, 14, 2, '2026-03-14 13:00', '2026-03-14 16:00', 25, 'confirmed', '2026-03-05');
+INSERT INTO SpaceReservation VALUES (15, 15, 3, '2026-03-15 18:00', '2026-03-15 22:00', 110, 'confirmed', '2026-03-06');
+INSERT INTO SpaceReservation VALUES (16, 16, 4, '2026-03-16 10:00', '2026-03-16 12:00', 9, 'pending', '2026-03-07');
+INSERT INTO SpaceReservation VALUES (17, 17, 5, '2026-03-17 17:00', '2026-03-17 20:00', 60, 'confirmed', '2026-03-08');
+INSERT INTO SpaceReservation VALUES (18, 18, 6, '2026-03-18 14:00', '2026-03-18 16:00', 14, 'confirmed', '2026-03-09');
+INSERT INTO SpaceReservation VALUES (19, 19, 1, '2026-03-19 10:00', '2026-03-19 13:00', 20, 'confirmed', '2026-03-10');
+INSERT INTO SpaceReservation VALUES (20, 20, 2, '2026-03-20 15:00', '2026-03-20 18:00', 35, 'confirmed', '2026-03-11');
+
+
