@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../db');
 
-// GET all spaces — status computed dynamically from active reservations
+// GET all spaces with status matching active reservations
 router.get('/', async (req, res) => {
   try {
     const result = await pool.query(`
