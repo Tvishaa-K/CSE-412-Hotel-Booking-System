@@ -40,6 +40,9 @@ The database has 7 tables based on our ER diagram:
 
 ```
 CSE-412-Hotel-Booking-System/
+├── database/           # SQL files
+│   ├── phase2.sql      # Schema (CREATE TABLE statements)
+│   └── insert.sql      # Seed data
 ├── hotel-backend/      # Express API server
 │   ├── index.js        # Entry point
 │   ├── db.js           # PostgreSQL connection
